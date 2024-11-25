@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testTwo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        button {
+            cursor: pointer;
+            transition: .4s;
+            border: none;
+            outline: none;
+        }
+
+        #header {
+            padding: 20px 0;
+            background: black;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-navbar a {
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 0 20px;
+        }
+
+        .header button {
+            color: white;
+            background: blue;
+            padding: 15px 35px;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="header">
+            <h1>Logo</h1>
+            <nav class="header-navbar">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+                <a href="#">reviews</a>
+            </nav>
+            <button>click</button>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    const arr = ['html', 'css', 'js', 'react']
+    const result = arr.map(el => {
+        return el.length
+    })
+    console.log(result)
+</script>
+
+
+
+</body>
+</html>
